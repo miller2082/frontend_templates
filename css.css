@@ -1,13 +1,53 @@
-
+/* The star applies to all elements */
 * {
+	// This is to outline boxes in development
+	// Remove after page is done
+	border: 1px solid red !important;
+* {
+	// The following is to allow page seen on different devices
 	-webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;                
 }
+/* The following are class identifiers as per '.' dot */
+/* a # indicates an id identifier */
+
+/* Media and Device Specific CSS:
+	Use media queries to adjust page to device 
+	and designate parameters.
+*/
+@media only screen and (max-width: 300px) {
+	p {
+		background-color: blue;
+	}
+	ul {
+		display: none;
+	}
+}
+@media only screen and (max-width: 300px) and (orientation: landscape) {
+	ol {
+		display: none;
+	}
+}
+/* CSS resetting amd CSS normalize to make page work on all devices.
+	a link in the html <head> element should do the trick.
+	If not, here is the link to complete file:
+	https://necolas.github.io/normalize.css/5.0.0/normalize.css
+*/
+
+p {
+	/* This keeps text within its box */
+	overflow: auto;
+
 .row {
-	margin: 20px;
+	width: 100%;
+	margin: 5px;
+	/* Should the following be applied to the body 
+	or row elements? */
     display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
 }
 .col-1 {
 	width: 8.33%;
@@ -44,15 +84,17 @@
 }
 .col-12 {
 	width: 100%;
-                }
+}
+
 .injected-text {
 	padding: 20px;
 	text-align: center;
 }
-	body {
+body {
 	font: Verdana, Helvetica, sans-serif;
 	display: block;
 }
+/* ID identifiers */
 #wrapper {
 	max-width: 100%;
 	margin-right: auto;
@@ -72,6 +114,7 @@
 	color: white;
 	background-color: blue;
 	border: 5px solid red;
+	font: helvetica;
 }
         
 

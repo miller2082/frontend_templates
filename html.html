@@ -2,41 +2,63 @@
 <html>
     <head>
         <title>Title Here Folks</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="frontend_templates">
+		<!-- CSS STYLESHEET LINK from Udacity -->
+		<!-- Can have several CSS files for a page -->
+		<link rel="stylesheet" href="style.css"> 
+		<!-- CSS STYLESHEET IN DJANGO PROJECT 
+		<link rel="stylesheet" href="{% static 'css/dev_blog.css' %}">
+		-->	
+		<!-- Normalize for CSS resetting -->
+		<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css"> 
+		<!-- BOOTSTRAP LINKS -->		
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/bootstrap-responsive.css">
+		<!-- META LINKS -->		
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="keywords" content="key words, are, here">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!--<link rel="stylesheet" href="{% static 'css/dev_blog.css' %}">-->	
     </head>
+<!-- Choose semantic tags based on the type of data held within the tag. The same goes for class and id-->
 	<body>
-		<div id="wrapper">
-		<div class="container-fluid">
-		<div>
+		<div id="wrapper"> <!--this is Bootstrap -->
+		<div class="container-fluid"> <!-- Bootstrap -->
+		<div class="row">
+			<div class="image"><img src="img/app.png" alt="This is a screenshot"></div>
+			<h1 id="header">You Have Found the My Homepage</h1>
 		</div>
-		<div>
+			<div class="col-2">
+			</div>
+			<div class="col-10">
+			</div>
+		<div class="row">
 		</div>
-		<div>
+			<div class="col-6">
+				<h1>Hello BIG World!</h1>
+					<h2><bold>bold</bold></h2>
+					<h3><strong>STRONG</strong></h3>
+					<h4 class="a"><i>Italian</i></h4>
+					<em>HOTDOG</em><br>
+					<small>HAMBURGER</small><br>
+					<mark>LOOK AT ME!</mark><br>
+					<del>DELETED</del><br>
+					<ins>Hamsters</ins>TEXT<br>
+					<sub>SEALS</sub>TEXT<br>
+					<sup>Puppets</sup>TEXT
+					<h2><a href="http://www.microsoft.com">Link to Microsoft</a></h2>
+			</div>
+			<div class="col-6">
+		<div class="row">
 		</div>
-		<div>
-		</div>
-		<div>
-		</div>
-		<div>
-		</div>
-		<div>
-		</div>
-		<div>
-		</div>
-		</div>
+			<div class="col-4">
+			</div>
+			<div class="col-8">
+		<div class="row">
 		</div>
 		<footer>
-			<div>
-				<div id="copyright" class="col-4">Copyright 2015 :hatsuontraining.com:: All rights reserved</div>
-				<div class="col-4">Contact: <a href="mailto:jmillerconcom@gmail.com">James M. Miller</a>.</div>
+			<div class="row">
+				<div class="col-4">Copyright 2015 :hatsuontraining.com:: All rights reserved</div>
+				<div class="col-8">Contact: <a href="mailto:jmillerconcom@gmail.com">James M. Miller</a>.</div>
 			</div>
         </footer>
 	</body>
